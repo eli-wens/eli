@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CardStyle1Component</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/process-overview/cards-templates/card-style1/card-style1.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Card style 1 component</p>
+
+    </p>
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../components/CardTemplateBaseComponent.html" target="_self" >CardTemplateBaseComponent</a></code>
+    </p>
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-card-style1</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./card-style1.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./card-style1.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { CardTemplateBaseComponent } from &#x27;../cards-template-base&#x27;;
+
+/**
+ * Card style 1 component
+ */
+@Component({
+  selector: &#x27;app-card-style1&#x27;,
+  templateUrl: &#x27;./card-style1.component.html&#x27;,
+  styleUrls: [&#x27;./card-style1.component.scss&#x27;]
+})
+export class CardStyle1Component extends CardTemplateBaseComponent {
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;card h-25&quot;&gt;
+    &lt;div class&#x3D;&quot;card-header&quot;&gt;
+        &lt;ul class&#x3D;&quot;nav nav-tabs card-header-tabs&quot; role&#x3D;&quot;tablist&quot;&gt;
+            &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+                &lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;#info{{data.counter}}&quot; id&#x3D;&quot;info-tab{{data.counter}}&quot; data-toggle&#x3D;&quot;tab&quot;
+                    role&#x3D;&quot;tab&quot; aria-controls&#x3D;&quot;info&quot; aria-selected&#x3D;&quot;true&quot;&gt;Info&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+                &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#hardware{{data.counter}}&quot; id&#x3D;&quot;hardware-tab{{data.counter}}&quot; data-toggle&#x3D;&quot;tab&quot;
+                    role&#x3D;&quot;tab&quot; aria-controls&#x3D;&quot;hardware&quot; aria-selected&#x3D;&quot;true&quot;&gt;Hardware&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+                &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#alerts{{data.counter}}&quot; id&#x3D;&quot;alerts-tab{{data.counter}}&quot; data-toggle&#x3D;&quot;tab&quot;
+                    role&#x3D;&quot;tab&quot; aria-controls&#x3D;&quot;alert&quot; aria-selected&#x3D;&quot;true&quot;&gt;Alerts&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;nav-item&quot;&gt;
+                &lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#device{{data.counter}}&quot; id&#x3D;&quot;device-tab{{data.counter}}&quot; data-toggle&#x3D;&quot;tab&quot;
+                    role&#x3D;&quot;tab&quot; aria-controls&#x3D;&quot;device&quot; aria-selected&#x3D;&quot;true&quot;&gt;IoT&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;card-body&quot;&gt;
+        &lt;div class&#x3D;&quot;tab-content&quot;&gt;
+            &lt;div class&#x3D;&quot;tab-pane fade show active&quot; id&#x3D;&quot;info{{data.counter}}&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;info-tab&quot;&gt;
+                &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{data.tank.naam}}&lt;/h5&gt;
+                &lt;h6 class&#x3D;&quot;card-subtitle mb-1&quot;&gt;{{data.tank.jaar}}&lt;/h6&gt;
+                &lt;h6 class&#x3D;&quot;card-subtitle text-success&quot; *ngIf&#x3D;&quot;data.tank.isActief&quot;&gt;Active&lt;/h6&gt;
+                &lt;h6 class&#x3D;&quot;card-subtitle text-danger&quot; *ngIf&#x3D;&quot;!data.tank.isActief&quot;&gt;Inactive&lt;/h6&gt;
+                &lt;div class&#x3D;&quot;row mt-3&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Druif&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.druif.naam}}&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Oogst&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.oogst}}&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Gekneusd&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;data.tank.gekneusd&quot;&gt;Ja&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;!data.tank.gekneusd&quot;&gt;Nee&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row mt-3&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Inhoud&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.programma.inhoud}}&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Pmax&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.programma.pmax}}&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Soort&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.soortWijn.naam}}&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;tab-pane fade&quot; id&#x3D;&quot;hardware{{data.counter}}&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;hardware-tab&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Type&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.typeVat.naam}}&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Materiaal&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.materiaal.naam}}&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Locatie&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot;&gt;{{data.tank.locatie}}&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row mt-3&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Koelmantel&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;data.tank.koelmantel&quot;&gt;Ja&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;!data.tank.koelmantel&quot;&gt;Nee&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-lg-4&quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text font-weight-bold&quot;&gt;Mangat&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;data.tank.mangat&quot;&gt;Ja&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;!data.tank.mangat&quot;&gt;Nee&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;tab-pane fade&quot; id&#x3D;&quot;alerts{{data.counter}}&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;alerts-tab&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot; *ngFor&#x3D;&quot;let alert of data.tank.alarmGebruikers&quot;&gt;
+                    &lt;div class&#x3D;&quot;card-text col-lg-12 font-weight-bold&quot;&gt;{{alert.soortAlarm.naam}} melding naar
+                        {{alert.gebruiker.naam}}&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;tab-pane fade&quot; id&#x3D;&quot;device{{data.counter}}&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;device-tab&quot;&gt;
+                &lt;h6 class&#x3D;&quot;card-subtitle&quot;&gt;Raspberry Pi&lt;/h6&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-lg-12 &quot;&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;data.tank.raspberryPi !&#x3D; null&quot;&gt;{{data.tank.raspberryPi.naam}}
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;card-text&quot; *ngIf&#x3D;&quot;data.tank.raspberryPi &#x3D;&#x3D; null&quot;&gt;Pi niet beschikbaar&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div *ngIf&#x3D;&quot;data.tank.raspberryPi !&#x3D; null&quot;&gt;
+                    &lt;h6 class&#x3D;&quot;card-subtitle mt-3&quot;&gt;Sensor(en)&lt;/h6&gt;
+                    &lt;div class&#x3D;&quot;row mt-3&quot;&gt;
+                        &lt;div class&#x3D;&quot;col-lg-12&quot; *ngIf&#x3D;&quot;data.tank.raspberryPi.sensoren !&#x3D; null&quot;&gt;
+                            &lt;div class&#x3D;&quot;card-text&quot; *ngFor&#x3D;&quot;let sensor of data.tank.raspberryPi.sensoren&quot;&gt;{{sensor.naam}}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;col-lg-12&quot; *ngIf&#x3D;&quot;data.tank.raspberryPi.sensoren &#x3D;&#x3D; null&quot;&gt;
+                            &lt;div class&#x3D;&quot;card-text&quot;&gt;Sensor(en) niet beschikbaar&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./card-style1.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.card {
+    height: 50%;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="card h-25">    <div class="card-header">        <ul class="nav nav-tabs card-header-tabs" role="tablist">            <li class="nav-item">                <a class="nav-link active" href="#info{{data.counter}}" id="info-tab{{data.counter}}" data-toggle="tab"                    role="tab" aria-controls="info" aria-selected="true">Info</a>            </li>            <li class="nav-item">                <a class="nav-link" href="#hardware{{data.counter}}" id="hardware-tab{{data.counter}}" data-toggle="tab"                    role="tab" aria-controls="hardware" aria-selected="true">Hardware</a>            </li>            <li class="nav-item">                <a class="nav-link" href="#alerts{{data.counter}}" id="alerts-tab{{data.counter}}" data-toggle="tab"                    role="tab" aria-controls="alert" aria-selected="true">Alerts</a>            </li>            <li class="nav-item">                <a class="nav-link" href="#device{{data.counter}}" id="device-tab{{data.counter}}" data-toggle="tab"                    role="tab" aria-controls="device" aria-selected="true">IoT</a>            </li>        </ul>    </div>    <div class="card-body">        <div class="tab-content">            <div class="tab-pane fade show active" id="info{{data.counter}}" role="tabpanel" aria-labelledby="info-tab">                <h5 class="card-title">{{data.tank.naam}}</h5>                <h6 class="card-subtitle mb-1">{{data.tank.jaar}}</h6>                <h6 class="card-subtitle text-success" *ngIf="data.tank.isActief">Active</h6>                <h6 class="card-subtitle text-danger" *ngIf="!data.tank.isActief">Inactive</h6>                <div class="row mt-3">                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Druif</div>                        <div class="card-text">{{data.tank.druif.naam}}</div>                    </div>                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Oogst</div>                        <div class="card-text">{{data.tank.oogst}}</div>                    </div>                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Gekneusd</div>                        <div class="card-text" *ngIf="data.tank.gekneusd">Ja</div>                        <div class="card-text" *ngIf="!data.tank.gekneusd">Nee</div>                    </div>                </div>                <div class="row mt-3">                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Inhoud</div>                        <div class="card-text">{{data.tank.programma.inhoud}}</div>                    </div>                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Pmax</div>                        <div class="card-text">{{data.tank.programma.pmax}}</div>                    </div>                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Soort</div>                        <div class="card-text">{{data.tank.soortWijn.naam}}</div>                    </div>                </div>            </div>            <div class="tab-pane fade" id="hardware{{data.counter}}" role="tabpanel" aria-labelledby="hardware-tab">                <div class="row">                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Type</div>                        <div class="card-text">{{data.tank.typeVat.naam}}</div>                    </div>                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Materiaal</div>                        <div class="card-text">{{data.tank.materiaal.naam}}</div>                    </div>                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Locatie</div>                        <div class="card-text">{{data.tank.locatie}}</div>                    </div>                </div>                <div class="row mt-3">                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Koelmantel</div>                        <div class="card-text" *ngIf="data.tank.koelmantel">Ja</div>                        <div class="card-text" *ngIf="!data.tank.koelmantel">Nee</div>                    </div>                    <div class="col-lg-4">                        <div class="card-text font-weight-bold">Mangat</div>                        <div class="card-text" *ngIf="data.tank.mangat">Ja</div>                        <div class="card-text" *ngIf="!data.tank.mangat">Nee</div>                    </div>                </div>            </div>            <div class="tab-pane fade" id="alerts{{data.counter}}" role="tabpanel" aria-labelledby="alerts-tab">                <div class="row" *ngFor="let alert of data.tank.alarmGebruikers">                    <div class="card-text col-lg-12 font-weight-bold">{{alert.soortAlarm.naam}} melding naar                        {{alert.gebruiker.naam}}</div>                </div>            </div>            <div class="tab-pane fade" id="device{{data.counter}}" role="tabpanel" aria-labelledby="device-tab">                <h6 class="card-subtitle">Raspberry Pi</h6>                <div class="row">                    <div class="col-lg-12 ">                        <div class="card-text" *ngIf="data.tank.raspberryPi != null">{{data.tank.raspberryPi.naam}}                        </div>                        <div class="card-text" *ngIf="data.tank.raspberryPi == null">Pi niet beschikbaar</div>                    </div>                </div>                <div *ngIf="data.tank.raspberryPi != null">                    <h6 class="card-subtitle mt-3">Sensor(en)</h6>                    <div class="row mt-3">                        <div class="col-lg-12" *ngIf="data.tank.raspberryPi.sensoren != null">                            <div class="card-text" *ngFor="let sensor of data.tank.raspberryPi.sensoren">{{sensor.naam}}                            </div>                        </div>                        <div class="col-lg-12" *ngIf="data.tank.raspberryPi.sensoren == null">                            <div class="card-text">Sensor(en) niet beschikbaar</div>                        </div>                    </div>                </div>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'ActionsComponent', 'selector': 'app-actions'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardStyle1Component', 'selector': 'app-card-style1'},{'name': 'CardTemplateBaseComponent', 'selector': 'app-card-template-base'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MeasurementsComponent', 'selector': 'app-measurements'},{'name': 'ModalAddActivityComponent', 'selector': 'app-modal-add-activity'},{'name': 'ModalAddMeasurementComponent', 'selector': 'app-modal-add-measurement'},{'name': 'ModalStopProcessComponent', 'selector': 'app-modal-stop-process'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'ProcesOpstartComponent', 'selector': 'app-proces-opstart'},{'name': 'ProcessCardsComponent', 'selector': 'app-process-cards'},{'name': 'ProcessCardsItemComponent', 'selector': 'app-process-cards-item'},{'name': 'ProcessOverviewComponent', 'selector': 'app-process-overview'},{'name': 'UsersBeherenComponent', 'selector': 'app-users-beheren'}];
+    var DIRECTIVES = [{'name': 'CardsDirective', 'selector': '[card-host]'}];
+    var ACTUAL_COMPONENT = {'name': 'CardStyle1Component'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CardStyle1Component.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

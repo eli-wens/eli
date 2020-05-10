@@ -1,0 +1,14 @@
+{% capture url_tree %}
+  {{ page.url | replace: '/', ' ' | strip }}
+{% endcapture %}
+
+{% capture url_level %}
+  {{ url_tree | number_of_words | minus: 1 }}
+{% endcapture %}
+
+{% assign breadcrumb = url_tree | split: ' ' %}
+<div>
+    <a href="{{ site.baseurl }}">Home</a>/{% for item in breadcrumb %}{% assign label = item | replace: '-', ' ' %}{% assign index = forloop.length | minus: forloop.index %}{% assign page_url = page.url | split: '/' | pop: index | join: '/' %}{% if forloop.last %}<span>{{ page.breadcrumb_label | default: label }}</span>{% else %}<a href="{{ site.baseurl }}{{ page_url }}/">{{ label }}</a>/
+    {% endif %}
+{% endfor %}
+</div>

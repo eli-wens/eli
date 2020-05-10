@@ -1,0 +1,1314 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>UsersBeherenComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/users-beheren/users-beheren.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Users-beheren component</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-users-beheren</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./users-beheren.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./users-beheren.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deleteUser">deleteUser</a>
+                            </li>
+                            <li>
+                                <a href="#getAllUsers">getAllUsers</a>
+                            </li>
+                            <li>
+                                <a href="#matchPasswordAdd">matchPasswordAdd</a>
+                            </li>
+                            <li>
+                                <a href="#matchPasswordEdit">matchPasswordEdit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitAddUser">onSubmitAddUser</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitDelUser">onSubmitDelUser</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitEditUser">onSubmitEditUser</a>
+                            </li>
+                            <li>
+                                <a href="#passwCheckbox">passwCheckbox</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, _gebruikerService: <a href="../injectables/GebruikerService.html">GebruikerService</a>, modalService: NgbModal)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_gebruikerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GebruikerService.html" target="_self" >GebruikerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteUser"></a>
+                    <span class="name">
+                        <b>
+                            deleteUser
+                        </b>
+                        <a href="#deleteUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteUser(user: <a href="../classes/Gebruiker.html">Gebruiker</a>, content)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Opens the confirmation form for deleteing a user</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/Gebruiker.html" target="_self" >Gebruiker</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllUsers"></a>
+                    <span class="name">
+                        <b>
+                            getAllUsers
+                        </b>
+                        <a href="#getAllUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllUsers()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets all users from the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="matchPasswordAdd"></a>
+                    <span class="name">
+                        <b>
+                            matchPasswordAdd
+                        </b>
+                        <a href="#matchPasswordAdd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>matchPasswordAdd(control: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if the given passwords match when creating a new user</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/AbstractControl" target="_blank" >AbstractControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="matchPasswordEdit"></a>
+                    <span class="name">
+                        <b>
+                            matchPasswordEdit
+                        </b>
+                        <a href="#matchPasswordEdit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>matchPasswordEdit(control: <a href="https://angular.io/api/forms/AbstractControl" target="_blank">AbstractControl</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if the given passwords match when editing a user</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/AbstractControl" target="_blank" >AbstractControl</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the component is destroyed</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the component is initialized</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitAddUser"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitAddUser
+                        </b>
+                        <a href="#onSubmitAddUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitAddUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="226"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:226</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the form for creating a user is submitted
+Creates a new user in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitDelUser"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitDelUser
+                        </b>
+                        <a href="#onSubmitDelUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitDelUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="185"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:185</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the delete user form is submitted
+Deletes a user from the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitEditUser"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitEditUser
+                        </b>
+                        <a href="#onSubmitEditUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitEditUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the edit user form is submitted
+Edits a user record in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="passwCheckbox"></a>
+                    <span class="name">
+                        <b>
+                            passwCheckbox
+                        </b>
+                        <a href="#passwCheckbox"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>passwCheckbox()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/users-beheren/users-beheren.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the password checkbox checkstate changes
+Sets validators for password depending on the checkstate</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, AbstractControl, Validators } from &#x27;@angular/forms&#x27;;
+import { GebruikerService } from &#x27;../_services/gebruiker.service&#x27;;
+import { Gebruiker } from &#x27;../models/gebruiker.model&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { NgbModal } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+
+/**
+ * Users-beheren component
+ */
+@Component({
+  selector: &#x27;app-users-beheren&#x27;,
+  templateUrl: &#x27;./users-beheren.component.html&#x27;,
+  styleUrls: [&#x27;./users-beheren.component.scss&#x27;]
+})
+export class UsersBeherenComponent implements OnInit {
+
+  /**
+   * @ignore
+   */
+  private subscriptions: Subscription &#x3D; new Subscription();
+  /**
+   * @ignore
+   */
+  gebruikers: Gebruiker[];
+  /**
+   * @ignore
+   */
+  gebruikerID: any;
+  /**
+   * @ignore
+   */
+  currentGebruiker: Gebruiker;
+
+  /**
+   * @ignore
+   */
+  userForm: FormGroup;
+  /**
+   * @ignore
+   */
+  delForm: FormGroup;
+
+  /**
+   * @ignore
+   */
+  addUserForm &#x3D; this.fb.group({
+    firstname: [&#x27;&#x27;, Validators.required],
+    lastname: [&#x27;&#x27;, Validators.required],
+    email: [&#x27;&#x27;, [Validators.required, Validators.email]],
+    isAdmin: [false],
+    phone: [&#x27;&#x27;, [Validators.required, Validators.pattern(&quot;^[0-9]*$&quot;)]],
+    passw: [&#x27;&#x27;, Validators.required],
+    passwval: [&#x27;&#x27;, [Validators.required]]
+  }, {validator: this.matchPasswordAdd});
+
+
+  constructor(
+    private fb:FormBuilder,
+    private _gebruikerService: GebruikerService,
+    private modalService: NgbModal
+  ) { }
+
+  /**
+   * Executes when the component is initialized
+   */
+  ngOnInit() {
+    this.getAllUsers();
+  }
+
+  /**
+   * Gets all users from the database
+   */
+  getAllUsers(){
+    this.gebruikerID &#x3D; localStorage.getItem(&quot;gebruikerID&quot;);
+    this.subscriptions.add(this._gebruikerService.getAllGebruikers().subscribe(
+      result &#x3D;&gt; {
+        this.gebruikers &#x3D; result;
+        this.currentGebruiker &#x3D; this.gebruikers.find(x &#x3D;&gt; x.gebruikerID &#x3D;&#x3D; this.gebruikerID);
+        this.gebruikers.splice(this.gebruikers.findIndex(x &#x3D;&gt; x.gebruikerID &#x3D;&#x3D; this.gebruikerID), 1);
+      }
+    ));
+  }
+
+  /**
+   * Executes when the component is destroyed
+   */
+  ngOnDestroy() {
+    this.subscriptions.unsubscribe();
+  }
+
+  /**
+   * @ignore
+   */
+  editUser(user: Gebruiker, content){
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-user-title&#x27; });
+
+    this.userForm &#x3D; this.fb.group({
+      naam: [user.naam, Validators.required],
+      email: [user.email, [Validators.required, Validators.email]],
+      telNummer: [user.telNummer, [Validators.required, Validators.pattern(&quot;^[0-9]*$&quot;)]],
+      isAdmin: [user.isAdmin],
+      passwChange: [false],
+      passwNew: [&#x27;&#x27;],
+      passwNewConfirm: [&#x27;&#x27;],
+      user: [user]
+    }, {validator: this.matchPasswordEdit})
+  }
+
+  /**
+   * Executes when the edit user form is submitted
+   * Edits a user record in the database
+   */
+  onSubmitEditUser(){
+    let user &#x3D; this.userForm.value.user;
+    user.naam &#x3D; this.userForm.value.naam;
+    user.email &#x3D; this.userForm.value.email;
+    user.telNummer &#x3D; this.userForm.value.telNummer;
+    user.isAdmin &#x3D; this.userForm.value.isAdmin;
+    user.wachtwoord &#x3D; this.userForm.value.passwNew;
+    this.subscriptions.add(this._gebruikerService.putGebruiker(user.gebruikerID, user).subscribe());
+  }
+
+  /**
+   * Checks if the given passwords match when creating a new user
+   */
+  matchPasswordAdd(control: AbstractControl){
+    let passw &#x3D; control.get(&#x27;passw&#x27;).value;
+    let passwval &#x3D; control.get(&#x27;passwval&#x27;).value;
+    if (passw !&#x3D; passwval){
+      control.get(&#x27;passwval&#x27;).setErrors({MatchPassword: true});
+    }else{
+      return null;
+    }
+  }
+
+  /**
+   * Checks if the given passwords match when editing a user
+   */
+  matchPasswordEdit(control: AbstractControl){
+    let passw &#x3D; control.get(&#x27;passwNew&#x27;).value;
+    let passwval &#x3D; control.get(&#x27;passwNewConfirm&#x27;).value;
+    if (passw !&#x3D; passwval){
+      control.get(&#x27;passwNewConfirm&#x27;).setErrors({MatchPassword: true});
+    }else{
+      return null;
+    }
+  }
+
+  /**
+   * Executes when the password checkbox checkstate changes
+   * Sets validators for password depending on the checkstate
+   */
+  passwCheckbox(){
+    if (!this.userForm.value.passwChange){
+      this.userForm.get(&#x27;passwNew&#x27;).setValidators(Validators.required);
+      this.userForm.get(&#x27;passwNewConfirm&#x27;).setValidators(Validators.required);
+    } else {
+      this.userForm.get(&#x27;passwNew&#x27;).clearValidators();
+      this.userForm.get(&#x27;passwNew&#x27;).updateValueAndValidity();
+      this.userForm.get(&#x27;passwNewConfirm&#x27;).clearValidators();
+      this.userForm.get(&#x27;passwNewConfirm&#x27;).updateValueAndValidity();
+    }
+  }
+
+  /**
+   * Opens the confirmation form for deleteing a user
+   */
+  deleteUser(user: Gebruiker, content){
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-delUser-title&#x27; });
+
+    this.delForm &#x3D; this.fb.group({
+      naam: [user.naam],
+      email: [user.email],
+      telNummer: [user.telNummer],
+      isAdmin: [user.isAdmin],
+      user: [user]
+    })
+  }
+
+  /**
+   * Executes when the delete user form is submitted
+   * Deletes a user from the database
+   */
+  onSubmitDelUser(){
+    let user &#x3D; this.delForm.value.user;
+    this.subscriptions.add(this._gebruikerService.deleteGebruiker(user.gebruikerID).subscribe(
+      result &#x3D;&gt; {
+        this.getAllUsers();
+      }
+    ));
+  }
+
+  /**
+   * @ignore
+   */
+  onModalUserClose(){
+    this.userForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  onModalDelUserClose(){
+    this.delForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  onModalAddUserClose(){
+    this.addUserForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  openAddUserModal(content){
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-addUser-title&#x27; });
+  }
+
+  /**
+   * Executes when the form for creating a user is submitted
+   * Creates a new user in the database
+   */
+  onSubmitAddUser(){
+    let naam &#x3D; this.addUserForm.value.firstname + &#x27; &#x27; + this.addUserForm.value.lastname;
+    let email &#x3D; this.addUserForm.value.email;
+    let telNummer &#x3D; this.addUserForm.value.phone;
+    let isAdmin &#x3D; this.addUserForm.value.isAdmin;
+    let wachtwoord &#x3D; this.addUserForm.value.passw;
+    let newUser &#x3D; new Gebruiker(0,naam, wachtwoord, email, telNummer, isAdmin, &quot;&quot;);
+    this.subscriptions.add(this._gebruikerService.addGebruiker(newUser).subscribe(
+      result &#x3D;&gt; {
+        this.getAllUsers();
+      }
+    ));
+    
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;h2&gt;Mijn account&lt;/h2&gt;
+    &lt;table class&#x3D;&quot;table&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Naam&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+            &lt;th&gt;Telefoon&lt;/th&gt;
+            &lt;th&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;{{currentGebruiker?.naam}}&lt;/td&gt;
+            &lt;td&gt;{{currentGebruiker?.email}}&lt;/td&gt;
+            &lt;td&gt;{{currentGebruiker?.telNummer}}&lt;/td&gt;
+            &lt;td&gt;&lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;editUser(currentGebruiker, contentUser)&quot;&gt;Edit&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;h2&gt;Andere gebruikers&lt;/h2&gt;
+        &lt;button class&#x3D;&quot;btn btn-primary btn-sm&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;openAddUserModal(contentAddUser)&quot;&gt;Add&lt;/button&gt;    
+    &lt;/div&gt;
+    &lt;table class&#x3D;&quot;table table-striped&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Naam&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+            &lt;th&gt;Telefoon&lt;/th&gt;
+            &lt;th&gt;Admin&lt;/th&gt;
+            &lt;th&gt;&lt;/th&gt;
+            
+        &lt;/tr&gt;
+        &lt;tr *ngFor&#x3D;&quot;let item of gebruikers&quot;&gt;
+            &lt;td&gt;{{item.naam}}&lt;/td&gt;
+            &lt;td&gt;{{item.email}}&lt;/td&gt;
+            &lt;td&gt;{{item.telNummer}}&lt;/td&gt;
+            &lt;td *ngIf&#x3D;&quot;item.isAdmin &#x3D;&#x3D; true&quot;&gt;Ja&lt;/td&gt;
+            &lt;td *ngIf&#x3D;&quot;item.isAdmin &#x3D;&#x3D; false&quot;&gt;Nee&lt;/td&gt;
+            &lt;td&gt;
+                &lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;editUser(item, contentUser)&quot;&gt;Edit&lt;/button&gt;
+                &lt;button class&#x3D;&quot;btn btn-danger ml-3&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;deleteUser(item, contentDelUser)&quot;&gt;Delete&lt;/button&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;ng-template #contentUser let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-user-title&quot;&gt;Gebruiker beheren&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalUserClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;userForm&quot; (ngSubmit)&#x3D;&quot;onSubmitEditUser(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Naam&quot; formControlName&#x3D;&quot;naam&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;naam&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; userForm.get(&#x27;naam&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Email&quot; formControlName&#x3D;&quot;email&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;email&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; userForm.get(&#x27;email&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;email&#x27;).hasError(&#x27;email&#x27;) &amp;&amp; userForm.get(&#x27;email&#x27;).touched&quot;&gt;Email format!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Telefoon&quot; formControlName&#x3D;&quot;telNummer&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;telNummer&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; userForm.get(&#x27;telNummer&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;telNummer&#x27;).hasError(&#x27;pattern&#x27;) &amp;&amp; userForm.get(&#x27;telNummer&#x27;).touched&quot;&gt;Phone number format!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;mat-checkbox formControlName&#x3D;&quot;isAdmin&quot;&gt;Admin&lt;/mat-checkbox&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;mat-checkbox formControlName&#x3D;&quot;passwChange&quot; (click)&#x3D;&quot;passwCheckbox()&quot;&gt;Wachtwoord veranderen&lt;/mat-checkbox&gt;
+            &lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;userForm.value.passwChange&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                        &lt;input matInput type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Password&quot; formControlName&#x3D;&quot;passwNew&quot; type&#x3D;&quot;password&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;passwNew&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; userForm.get(&#x27;passwNew&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;&lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                        &lt;input matInput type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Password confirm&quot; formControlName&#x3D;&quot;passwNewConfirm&quot; type&#x3D;&quot;password&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;passwNewConfirm&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; userForm.get(&#x27;passwNewConfirm&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;userForm.get(&#x27;passwNewConfirm&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; userForm.get(&#x27;passwNewConfirm&#x27;).touched&quot;&gt;Passwords don&#x27;t match!&lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!userForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Edit&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalUserClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #contentDelUser let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-delUser-title&quot;&gt;Gebruiker Verwijderen&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalDelUserClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;delForm&quot; (ngSubmit)&#x3D;&quot;onSubmitDelUser(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;p class&#x3D;&quot;col&quot;&gt;Verwijder gebruiker: {{delForm.value.naam}}&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!delForm.valid&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Delete&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalDelUserClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #contentAddUser let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-addUser-title&quot;&gt;Gebruiker Toevoegen&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalAddUserClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;addUserForm&quot; (ngSubmit)&#x3D;&quot;onSubmitAddUser(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;first name&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;firstname&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;firstname&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; addUserForm.get(&#x27;firstname&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;last name&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;lastname&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;lastname&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; addUserForm.get(&#x27;lastname&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;email&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;email&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;email&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; addUserForm.get(&#x27;email&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;email&#x27;).hasError(&#x27;email&#x27;) &amp;&amp; addUserForm.get(&#x27;email&#x27;).touched&quot;&gt;Email format invalid!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;phone&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;phone&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;phone&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; addUserForm.get(&#x27;phone&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;phone&#x27;).hasError(&#x27;pattern&#x27;) &amp;&amp; addUserForm.get(&#x27;phone&#x27;).touched&quot;&gt;Phone number can only consist of numbers!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt; 
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-checkbox class&#x3D;&quot;col&quot; formControlName&#x3D;&quot;isAdmin&quot;&gt;Admin&lt;/mat-checkbox&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;password&quot; type&#x3D;&quot;password&quot; formControlName&#x3D;&quot;passw&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;passw&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; addUserForm.get(&#x27;passw&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;confirm password&quot; type&#x3D;&quot;password&quot; formControlName&#x3D;&quot;passwval&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;passwval&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; addUserForm.get(&#x27;passwval&#x27;).touched&quot;&gt;Required!&lt;/mat-error&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;addUserForm.get(&#x27;passwval&#x27;).hasError(&#x27;MatchPassword&#x27;) &amp;&amp; addUserForm.get(&#x27;passwval&#x27;).touched&quot;&gt;Passwords don&#x27;t match!&lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!addUserForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Add&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalAddUserClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./users-beheren.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">    <h2>Mijn account</h2>    <table class="table">        <tr>            <th>Naam</th>            <th>Email</th>            <th>Telefoon</th>            <th></th>        </tr>        <tr>            <td>{{currentGebruiker?.naam}}</td>            <td>{{currentGebruiker?.email}}</td>            <td>{{currentGebruiker?.telNummer}}</td>            <td><button class="btn btn-primary" type="button" (click)="editUser(currentGebruiker, contentUser)">Edit</button></td>        </tr>    </table>    <div class="row">        <h2>Andere gebruikers</h2>        <button class="btn btn-primary btn-sm" type="button" (click)="openAddUserModal(contentAddUser)">Add</button>        </div>    <table class="table table-striped">        <tr>            <th>Naam</th>            <th>Email</th>            <th>Telefoon</th>            <th>Admin</th>            <th></th>                    </tr>        <tr *ngFor="let item of gebruikers">            <td>{{item.naam}}</td>            <td>{{item.email}}</td>            <td>{{item.telNummer}}</td>            <td *ngIf="item.isAdmin == true">Ja</td>            <td *ngIf="item.isAdmin == false">Nee</td>            <td>                <button class="btn btn-primary" type="button" (click)="editUser(item, contentUser)">Edit</button>                <button class="btn btn-danger ml-3" type="button" (click)="deleteUser(item, contentDelUser)">Delete</button>            </td>        </tr>    </table></div><ng-template #contentUser let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-user-title">Gebruiker beheren</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalUserClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="userForm" (ngSubmit)="onSubmitEditUser(); modal.close()">        <div class="modal-body">            <div class="row">                <mat-form-field class="col">                    <input matInput type="text" placeholder="Naam" formControlName="naam">                    <mat-error *ngIf="userForm.get(\'naam\').hasError(\'required\') && userForm.get(\'naam\').touched">Required!</mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput type="text" placeholder="Email" formControlName="email">                    <mat-error *ngIf="userForm.get(\'email\').hasError(\'required\') && userForm.get(\'email\').touched">Required!</mat-error>                    <mat-error *ngIf="userForm.get(\'email\').hasError(\'email\') && userForm.get(\'email\').touched">Email format!</mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput type="text" placeholder="Telefoon" formControlName="telNummer">                    <mat-error *ngIf="userForm.get(\'telNummer\').hasError(\'required\') && userForm.get(\'telNummer\').touched">Required!</mat-error>                    <mat-error *ngIf="userForm.get(\'telNummer\').hasError(\'pattern\') && userForm.get(\'telNummer\').touched">Phone number format!</mat-error>                </mat-form-field>            </div>            <div>                <mat-checkbox formControlName="isAdmin">Admin</mat-checkbox>            </div>            <div>                <mat-checkbox formControlName="passwChange" (click)="passwCheckbox()">Wachtwoord veranderen</mat-checkbox>            </div>            <div *ngIf="userForm.value.passwChange">                <div class="row">                    <mat-form-field class="col">                        <input matInput type="text" placeholder="Password" formControlName="passwNew" type="password">                        <mat-error *ngIf="userForm.get(\'passwNew\').hasError(\'required\') && userForm.get(\'passwNew\').touched">Required!</mat-error>                    </mat-form-field>                </div><div class="row">                    <mat-form-field class="col">                        <input matInput type="text" placeholder="Password confirm" formControlName="passwNewConfirm" type="password">                        <mat-error *ngIf="userForm.get(\'passwNewConfirm\').hasError(\'required\') && userForm.get(\'passwNewConfirm\').touched">Required!</mat-error>                        <mat-error *ngIf="userForm.get(\'passwNewConfirm\').hasError(\'required\') && userForm.get(\'passwNewConfirm\').touched">Passwords don\'t match!</mat-error>                    </mat-form-field>                </div>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!userForm.valid" class="btn btn-success">Edit</button>            <button type="button" class="btn btn-danger" (click)="onModalUserClose(); modal.close()">Cancel</button>        </div>    </form></ng-template><ng-template #contentDelUser let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-delUser-title">Gebruiker Verwijderen</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalDelUserClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="delForm" (ngSubmit)="onSubmitDelUser(); modal.close()">        <div class="modal-body">            <div class="row">                <p class="col">Verwijder gebruiker: {{delForm.value.naam}}</p>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!delForm.valid" class="btn btn-warning">Delete</button>            <button type="button" class="btn btn-danger" (click)="onModalDelUserClose(); modal.close()">Cancel</button>        </div>    </form></ng-template><ng-template #contentAddUser let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-addUser-title">Gebruiker Toevoegen</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalAddUserClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="addUserForm" (ngSubmit)="onSubmitAddUser(); modal.close()">        <div class="modal-body">            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="first name" type="text" formControlName="firstname">                    <mat-error *ngIf="addUserForm.get(\'firstname\').hasError(\'required\') && addUserForm.get(\'firstname\').touched">Required!</mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="last name" type="text" formControlName="lastname">                    <mat-error *ngIf="addUserForm.get(\'lastname\').hasError(\'required\') && addUserForm.get(\'lastname\').touched">Required!</mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="email" type="text" formControlName="email">                    <mat-error *ngIf="addUserForm.get(\'email\').hasError(\'required\') && addUserForm.get(\'email\').touched">Required!</mat-error>                    <mat-error *ngIf="addUserForm.get(\'email\').hasError(\'email\') && addUserForm.get(\'email\').touched">Email format invalid!</mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="phone" type="text" formControlName="phone">                    <mat-error *ngIf="addUserForm.get(\'phone\').hasError(\'required\') && addUserForm.get(\'phone\').touched">Required!</mat-error>                    <mat-error *ngIf="addUserForm.get(\'phone\').hasError(\'pattern\') && addUserForm.get(\'phone\').touched">Phone number can only consist of numbers!</mat-error>                </mat-form-field>             </div>            <div class="row">                <mat-checkbox class="col" formControlName="isAdmin">Admin</mat-checkbox>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="password" type="password" formControlName="passw">                    <mat-error *ngIf="addUserForm.get(\'passw\').hasError(\'required\') && addUserForm.get(\'passw\').touched">Required!</mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="confirm password" type="password" formControlName="passwval">                    <mat-error *ngIf="addUserForm.get(\'passwval\').hasError(\'required\') && addUserForm.get(\'passwval\').touched">Required!</mat-error>                    <mat-error *ngIf="addUserForm.get(\'passwval\').hasError(\'MatchPassword\') && addUserForm.get(\'passwval\').touched">Passwords don\'t match!</mat-error>                </mat-form-field>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!addUserForm.valid" class="btn btn-success">Add</button>            <button type="button" class="btn btn-danger" (click)="onModalAddUserClose(); modal.close()">Cancel</button>        </div>    </form></ng-template></div>'
+    var COMPONENTS = [{'name': 'ActionsComponent', 'selector': 'app-actions'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardStyle1Component', 'selector': 'app-card-style1'},{'name': 'CardTemplateBaseComponent', 'selector': 'app-card-template-base'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MeasurementsComponent', 'selector': 'app-measurements'},{'name': 'ModalAddActivityComponent', 'selector': 'app-modal-add-activity'},{'name': 'ModalAddMeasurementComponent', 'selector': 'app-modal-add-measurement'},{'name': 'ModalStopProcessComponent', 'selector': 'app-modal-stop-process'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'ProcesOpstartComponent', 'selector': 'app-proces-opstart'},{'name': 'ProcessCardsComponent', 'selector': 'app-process-cards'},{'name': 'ProcessCardsItemComponent', 'selector': 'app-process-cards-item'},{'name': 'ProcessOverviewComponent', 'selector': 'app-process-overview'},{'name': 'UsersBeherenComponent', 'selector': 'app-users-beheren'}];
+    var DIRECTIVES = [{'name': 'CardsDirective', 'selector': '[card-host]'}];
+    var ACTUAL_COMPONENT = {'name': 'UsersBeherenComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UsersBeherenComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

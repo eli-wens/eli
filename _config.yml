@@ -1,0 +1,15 @@
+theme: jekyll-theme-cayman
+title: Eli Wens
+description: [Yo test 123!]
+
+
+
+
+RepoName: eli
+SiteTitle: eli
+
+github:
+  is_project_page: false
+
+plugins:
+  - jekyll-seo-tag

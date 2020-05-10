@@ -1,0 +1,1918 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ProcesOpstartComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/proces-opstart/proces-opstart.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Proces-opstart component</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                                <code><a href="https://angular.io/api/common/DatePipe" target="_blank" >DatePipe</a></code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-proces-opstart</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./proces-opstart.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./proces-opstart.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitNieuweDruif">onSubmitNieuweDruif</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitNieuwMateriaal">onSubmitNieuwMateriaal</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitNieuwProgramma">onSubmitNieuwProgramma</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitNieuwSoortWijn">onSubmitNieuwSoortWijn</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitNieuwTypeVat">onSubmitNieuwTypeVat</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmitOpstart">onSubmitOpstart</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, _druifService: <a href="../injectables/DruifService.html">DruifService</a>, _programmaService: <a href="../injectables/ProgrammaService.html">ProgrammaService</a>, _vatService: <a href="../injectables/VatService.html">VatService</a>, modalService: NgbModal, _soortAlarmSerivce: <a href="../injectables/SoortAlarmService.html">SoortAlarmService</a>, _gebruikerService: <a href="../injectables/GebruikerService.html">GebruikerService</a>, _alarmWaardeService: <a href="../injectables/AlarmWaardeService.html">AlarmWaardeService</a>, _alarmGebruikerService: <a href="../injectables/AlarmGebruikerService.html">AlarmGebruikerService</a>, _sensorService: <a href="../injectables/SensorService.html">SensorService</a>, _actieService: <a href="../injectables/ActieService.html">ActieService</a>, _soortActieService: <a href="../injectables/SoortActieService.html">SoortActieService</a>, datePipe: <a href="https://angular.io/api/common/DatePipe" target="_blank">DatePipe</a>, _typeVatService: <a href="../injectables/TypeVatService.html">TypeVatService</a>, _soortWijnService: <a href="../injectables/SoortWijnService.html">SoortWijnService</a>, _materiaalService: <a href="../injectables/MateriaalService.html">MateriaalService</a>, _raspberryPiService: <a href="../injectables/RaspberryPiService.html">RaspberryPiService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:164</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_druifService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DruifService.html" target="_self" >DruifService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_programmaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProgrammaService.html" target="_self" >ProgrammaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_vatService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/VatService.html" target="_self" >VatService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_soortAlarmSerivce</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SoortAlarmService.html" target="_self" >SoortAlarmService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_gebruikerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GebruikerService.html" target="_self" >GebruikerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_alarmWaardeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlarmWaardeService.html" target="_self" >AlarmWaardeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_alarmGebruikerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlarmGebruikerService.html" target="_self" >AlarmGebruikerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_sensorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SensorService.html" target="_self" >SensorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_actieService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ActieService.html" target="_self" >ActieService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_soortActieService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SoortActieService.html" target="_self" >SoortActieService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>datePipe</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/DatePipe" target="_blank" >DatePipe</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_typeVatService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TypeVatService.html" target="_self" >TypeVatService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_soortWijnService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SoortWijnService.html" target="_self" >SoortWijnService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_materiaalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MateriaalService.html" target="_self" >MateriaalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_raspberryPiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RaspberryPiService.html" target="_self" >RaspberryPiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="260"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:260</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the component is being destroyed</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the component is being initialized</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitNieuweDruif"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitNieuweDruif
+                        </b>
+                        <a href="#onSubmitNieuweDruif"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitNieuweDruif()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="370"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:370</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the druifform is submitted
+Creates a new druif in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitNieuwMateriaal"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitNieuwMateriaal
+                        </b>
+                        <a href="#onSubmitNieuwMateriaal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitNieuwMateriaal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="506"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:506</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the materiaal form is submitted
+Creates a new materiaal in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitNieuwProgramma"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitNieuwProgramma
+                        </b>
+                        <a href="#onSubmitNieuwProgramma"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitNieuwProgramma()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="402"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:402</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the programma form is submitted
+Creates a new programma in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitNieuwSoortWijn"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitNieuwSoortWijn
+                        </b>
+                        <a href="#onSubmitNieuwSoortWijn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitNieuwSoortWijn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="535"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:535</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the soortwijn form is submitted
+Creates a new SoortWijn in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitNieuwTypeVat"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitNieuwTypeVat
+                        </b>
+                        <a href="#onSubmitNieuwTypeVat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitNieuwTypeVat()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="564"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:564</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the typevat form is submitted
+Creates a new TypeVat in the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmitOpstart"></a>
+                    <span class="name">
+                        <b>
+                            onSubmitOpstart
+                        </b>
+                        <a href="#onSubmitOpstart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmitOpstart()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="277"
+                            class="link-to-prism">src/app/proces-opstart/proces-opstart.component.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Executes when the opstartform is submitted
+Adds a new process the the database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { FormBuilder, Validators, FormGroup, FormArray } from &#x27;@angular/forms&#x27;;
+import { DruifService } from &#x27;../_services/druif.service&#x27;;
+import { Druif } from &#x27;../models/druif.model&#x27;;
+import { ProgrammaService } from &#x27;../_services/programma.service&#x27;;
+import { Programma } from &#x27;../models/programma.model&#x27;;
+import { Vat } from &#x27;../models/vat.model&#x27;;
+import { VatService } from &#x27;../_services/vat.service&#x27;;
+import { NgbModal } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
+import { SoortAlarm } from &#x27;../models/soort-alarm.model&#x27;;
+import { SoortAlarmService } from &#x27;../_services/soort-alarm.service&#x27;;
+import { Gebruiker } from &#x27;../models/gebruiker.model&#x27;;
+import { GebruikerService } from &#x27;../_services/gebruiker.service&#x27;;
+import { AlarmWaarde } from &#x27;../models/alarm-waarde.model&#x27;;
+import { AlarmWaardeService } from &#x27;../_services/alarm-waarde.service&#x27;;
+import { AlarmGebruiker } from &#x27;../models/alarm-gebruiker.model&#x27;;
+import { AlarmGebruikerService } from &#x27;../_services/alarm-gebruiker.service&#x27;;
+import { SensorService } from &#x27;../_services/sensor.service&#x27;;
+import { Sensor } from &#x27;../models/sensor.model&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { ActieService } from &#x27;../_services/actie.service&#x27;;
+import { SoortActieService } from &#x27;../_services/soort-actie.service&#x27;;
+import { SoortActie } from &#x27;../models/soort-actie.model&#x27;;
+import { DatePipe } from &#x27;@angular/common&#x27;;
+import { Actie } from &#x27;../models/actie.model&#x27;;
+import { TypeVat } from &#x27;../models/type-vat.model&#x27;;
+import { SoortWijn } from &#x27;../models/soort-wijn.model&#x27;;
+import { Materiaal } from &#x27;../models/materiaal.model&#x27;;
+import { SoortWijnService } from &#x27;../_services/soort-wijn.service&#x27;;
+import { TypeVatService } from &#x27;../_services/type-vat.service&#x27;;
+import { MateriaalService } from &#x27;../_services/materiaal.service&#x27;;
+import { RaspberryPiService } from &#x27;../_services/raspberry-pi.service&#x27;;
+import { RaspberryPi } from &#x27;../models/raspberry-pi.model&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+/**
+ * Proces-opstart component
+ */
+@Component({
+  selector: &#x27;app-proces-opstart&#x27;,
+  templateUrl: &#x27;./proces-opstart.component.html&#x27;,
+  styleUrls: [&#x27;./proces-opstart.component.scss&#x27;],
+  providers: [DatePipe]
+})
+
+export class ProcesOpstartComponent implements OnInit, OnDestroy {
+  /**
+   * @ignore
+   */
+  private subscriptions: Subscription &#x3D; new Subscription();
+
+  /**
+   * @ignore
+   */
+  druiven: Druif[];
+  /**
+   * @ignore
+   */
+  programmas: Programma[];
+  /**
+   * @ignore
+   */
+  sensors: Sensor[];
+  /**
+   * @ignore
+   */
+  typevaten: TypeVat[];
+  /**
+   * @ignore
+   */
+  soortwijnen: SoortWijn[];
+  /**
+   * @ignore
+   */
+  materialen: Materiaal[];
+
+  /**
+   * @ignore
+   */
+  opstartForm &#x3D; this.fb.group({
+    naam: [&#x27;&#x27;, Validators.required],
+    nummer: [&#x27;&#x27;, Validators.required],
+    druif: [&#x27;&#x27;, Validators.required],
+    oogst: [&#x27;&#x27;, Validators.required],
+    gekneusd: [false],
+    raspberryPi: [&#x27;&#x27;, Validators.required],
+    programma: [&#x27;&#x27;, Validators.required],
+    locatie: [&#x27;&#x27;, Validators.required],
+    typeVat: [&#x27;&#x27;, Validators.required],
+    koelmantel: [false],
+    materiaal: [&#x27;&#x27;, Validators.required],
+    mangat: [false],
+    soortwijn: [&#x27;&#x27;, Validators.required],
+    jaar: [&#x27;&#x27;, [Validators.required, Validators.pattern(&quot;^[0-9]*$&quot;)]],
+    automatischeMetingen: [&#x27;&#x27;],
+    alarmen: this.fb.array([this.createAlarm()]),
+    acties: this.fb.array([this.createActie()])
+  })
+
+  /**
+   * @ignore
+   */
+  alarmList: FormArray &#x3D; this.opstartForm.get(&#x27;alarmen&#x27;) as FormArray;
+  /**
+   * @ignore
+   */
+  actieList: FormArray &#x3D; this.opstartForm.get(&#x27;acties&#x27;) as FormArray;
+  
+  /**
+   * @ignore
+   */
+  nieuweDruifForm &#x3D; this.fb.group({
+    naam: [&#x27;&#x27;, Validators.required],
+    kloontype: [&#x27;&#x27;, Validators.required],
+    leeftijd: [&#x27;&#x27;, Validators.required],
+    perceel: [&#x27;&#x27;, Validators.required]
+  });
+
+  /**
+   * @ignore
+   */
+  nieuwProgrammaForm &#x3D; this.fb.group({
+    naam: [&#x27;&#x27;, Validators.required],
+    pmax: [&#x27;&#x27;, Validators.required],
+    inhoud: [&#x27;&#x27;, Validators.required]
+  });
+
+  /**
+   * @ignore
+   */
+  nieuwMateriaalForm &#x3D; this.fb.group({
+    naam: [&#x27;&#x27;, Validators.required]
+  });
+
+  /**
+   * @ignore
+   */
+  nieuwSoortWijnForm &#x3D; this.fb.group({
+    naam: [&#x27;&#x27;, Validators.required]
+  });
+
+  /**
+   * @ignore
+   */
+  nieuwTypeVatForm &#x3D; this.fb.group({
+    naam: [&#x27;&#x27;, Validators.required]
+  });
+
+  /**
+   * @ignore
+   */
+  soortAlarmen: SoortAlarm[];
+  /**
+   * @ignore
+   */
+  gebruikers: Gebruiker[];
+  /**
+   * @ignore
+   */
+  soortActies: SoortActie[];
+  /**
+   * @ignore
+   */
+  rasppis: RaspberryPi[];
+
+  constructor(
+    private fb: FormBuilder,
+    private _druifService: DruifService,
+    private _programmaService: ProgrammaService,
+    private _vatService: VatService,
+    private modalService: NgbModal,
+    private _soortAlarmSerivce: SoortAlarmService,
+    private _gebruikerService: GebruikerService,
+    private _alarmWaardeService: AlarmWaardeService,
+    private _alarmGebruikerService: AlarmGebruikerService,
+    private _sensorService: SensorService,
+    private _actieService: ActieService,
+    private _soortActieService: SoortActieService,
+    private datePipe: DatePipe,
+    private _typeVatService: TypeVatService,
+    private _soortWijnService: SoortWijnService,
+    private _materiaalService: MateriaalService,
+    private _raspberryPiService: RaspberryPiService,
+    private router: Router
+    ) { }
+
+  /**
+   * Executes when the component is being initialized
+   */
+  ngOnInit() {
+    this.subscriptions.add(this._druifService.getAllDruiven().subscribe(
+      result &#x3D;&gt; {
+        this.druiven &#x3D; result;
+      }
+    ));
+
+    this.subscriptions.add(this._programmaService.getAllProgrammas().subscribe(
+      result &#x3D;&gt; {
+        this.programmas &#x3D; result;
+      }
+    ));
+
+    this.subscriptions.add(this._soortAlarmSerivce.getAllSoortAlarmen().subscribe(
+      result &#x3D;&gt; {
+        this.soortAlarmen &#x3D; result;
+      }
+    ));
+
+    this.subscriptions.add(this._gebruikerService.getAllGebruikers().subscribe(
+      result &#x3D;&gt; {
+        this.gebruikers &#x3D; result;
+      }
+    ));
+
+    this.subscriptions.add(this._soortActieService.getSoortActies().subscribe(
+      result &#x3D;&gt; {
+        this.soortActies &#x3D; result
+      }
+    ));
+
+    this.subscriptions.add(this._materiaalService.getAllMaterialen().subscribe(
+      result &#x3D;&gt; {
+        this.materialen &#x3D; result;
+      }
+    ));
+
+    this.subscriptions.add(this._typeVatService.getAllTypeVaten().subscribe(
+      result &#x3D;&gt; {
+        this.typevaten &#x3D; result;
+      }
+    ));
+
+    this.subscriptions.add(this._soortWijnService.getAllSoortWijnen().subscribe(
+      result &#x3D;&gt; {
+        this.soortwijnen &#x3D; result;
+      }
+    ));
+
+    this.subscriptions.add(this._raspberryPiService.getAllNotInUse().subscribe(
+      result &#x3D;&gt; {
+        this.rasppis &#x3D; result;
+      }
+    ));
+
+    this.opstartForm.get(&#x27;raspberryPi&#x27;).valueChanges.subscribe(
+      val &#x3D;&gt; {
+        this.subscriptions.add(this._sensorService.getAllSensorsWherePiID(val.raspberryPiID).subscribe(
+          result &#x3D;&gt; {
+            this.sensors &#x3D; result;
+            this.opstartForm.controls.automatischeMetingen.patchValue([...this.sensors.map(item &#x3D;&gt; item.sensorID)]);
+          }
+        ));
+      }
+    )
+  }
+
+  /**
+   * Executes when the component is being destroyed
+   */
+  ngOnDestroy() {
+    this.subscriptions.unsubscribe();
+  }
+
+  /**
+   * @ignore
+   */
+  pi: RaspberryPi;
+  /**
+   * @ignore
+   */
+  nieuwVatID: number;
+
+  /**
+   * Executes when the opstartform is submitted
+   * Adds a new process the the database
+   */
+  onSubmitOpstart() {
+    let naam &#x3D; this.opstartForm.value.naam;
+    let nummer &#x3D; this.opstartForm.value.nummer;
+    let druifID &#x3D; this.opstartForm.value.druif.druifID;
+    let oogst &#x3D; this.opstartForm.value.oogst;
+    let gekneusd &#x3D; this.opstartForm.value.gekneusd;
+    let locatie &#x3D; this.opstartForm.value.locatie;
+    let koelmantel &#x3D; this.opstartForm.value.koelmantel;
+    let mangat &#x3D; this.opstartForm.value.mangat;
+    let jaar &#x3D; this.opstartForm.value.jaar;
+    let typeVat &#x3D; this.opstartForm.value.typeVat.typeVatID;
+    let materiaal &#x3D; this.opstartForm.value.materiaal.materiaalID;
+    let soortwijn &#x3D; this.opstartForm.value.soortwijn.soortWijnID;
+    let programmaID &#x3D; this.opstartForm.value.programma.programmaID;
+    let piID &#x3D; this.opstartForm.value.raspberryPi.raspberryPiID;
+
+    this.pi &#x3D; this.opstartForm.value.raspberryPi;
+    this.pi.inGebruik &#x3D; true;
+    this.subscriptions.add(this._raspberryPiService.updateRaspberry(piID, this.pi).subscribe());
+
+    let nieuwVat &#x3D; new Vat(0, nummer, naam, oogst, gekneusd, programmaID, druifID, locatie, typeVat, koelmantel, materiaal, mangat, soortwijn, jaar, true, piID);
+    this.subscriptions.add(this._vatService.nieuwProces(nieuwVat).subscribe(
+      result &#x3D;&gt; {
+        this.nieuwVatID &#x3D; result.vatID;
+
+        if(this.opstartForm.value.alarmen){
+          for(let item of this.opstartForm.value.alarmen){
+            let drempel &#x3D; item.drempel;
+            let sensorID &#x3D; item.sensor;
+            let alarmWaarde &#x3D; new AlarmWaarde(0, sensorID, drempel)
+            let alarmWaardeID: number;
+            let vatID &#x3D; this.nieuwVatID;
+
+            this.subscriptions.add(this._alarmWaardeService.addAlarmWaarde(alarmWaarde).subscribe(
+              result &#x3D;&gt; {
+                alarmWaardeID &#x3D; result.alarmWaardeID;
+                for (let soortAlarmID of item.soortAlarm)
+                  for (let userID of item.gebruiker){
+                    let alarmGebruiker &#x3D; new AlarmGebruiker(0, alarmWaardeID, soortAlarmID, vatID, userID);
+                    this.subscriptions.add(this._alarmGebruikerService.addAlarmGebruiker(alarmGebruiker).subscribe());
+                  }
+              }
+            ));
+         }
+        }
+        
+        if(this.opstartForm.value.acties){
+          for(let item of this.opstartForm.value.acties){
+            let naam &#x3D; item.actie;
+            let datum &#x3D; item.datum;
+            let tijd &#x3D; item.tijd;
+            let soortActie &#x3D; item.soortActie;
+            let notitie &#x3D; item.notitie;
+            let datetime &#x3D; datum + &quot; &quot; + tijd;
+            let gebruikerID &#x3D; parseInt(localStorage.getItem(&quot;gebruikerID&quot;));
+            let actie &#x3D; new Actie(0, naam, datetime, this.nieuwVatID, gebruikerID, soortActie, notitie);
+            this.subscriptions.add(this.subscriptions.add(this._actieService.addActie(actie).subscribe()));
+          }
+        }
+        
+        if(this.opstartForm.value.automatischeMetingen){
+          let sensorIDs: number[] &#x3D; [];
+
+          for (let item of this.opstartForm.value.automatischeMetingen){
+            sensorIDs.push(item);
+          }
+
+          for (let sensor of this.sensors){
+            if (sensorIDs.includes(sensor.sensorID)){
+              sensor.isActief &#x3D; true;
+            } else {
+              sensor.isActief &#x3D; false;
+            }
+            this.subscriptions.add(this._sensorService.updateSensor(sensor.sensorID, sensor).subscribe());
+          }  
+        }     
+      }
+    ));
+    alert(&quot;Nieuw proces gestart.&quot;);
+    this.router.navigate([&#x27;/dashboard/&#x27; + this.nieuwVatID]);
+  }
+
+  /**
+   * @ignore
+   */
+  openModalDruif(content) {
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-druif-title&#x27; });
+  }
+
+  /**
+   * Executes when the druifform is submitted
+   * Creates a new druif in the database
+   */
+  onSubmitNieuweDruif() {
+    let naam &#x3D; this.nieuweDruifForm.value.naam;
+    let kloon &#x3D; this.nieuweDruifForm.value.kloontype;
+    let perceel &#x3D; this.nieuweDruifForm.value.perceel;
+    let leeftijd &#x3D; this.nieuweDruifForm.value.leeftijd;
+    let druif &#x3D; new Druif(0, naam, kloon, leeftijd, perceel);
+    this._druifService.addDruif(druif).subscribe(
+      result &#x3D;&gt; {
+        this.druiven.push(result);
+      }
+    );
+    this.nieuweDruifForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  onModalDruifClose() {
+    this.nieuweDruifForm.reset();
+  }
+
+  /**
+   * @ignore 
+   */
+  openModalProgramma(content) {
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-programma-title&#x27; });
+  }
+
+  /**
+   * Executes when the programma form is submitted
+   * Creates a new programma in the database
+   */
+  onSubmitNieuwProgramma() {
+    let naam &#x3D; this.nieuwProgrammaForm.value.naam;
+    let pmax &#x3D; this.nieuwProgrammaForm.value.pmax;
+    let inhoud &#x3D; this.nieuwProgrammaForm.value.inhoud;
+    let nieuwProgramma &#x3D; new Programma(0, naam, pmax, inhoud);
+    this._programmaService.addProgramma(nieuwProgramma).subscribe(
+      result &#x3D;&gt; {
+        this.programmas.push(result);
+      }
+    )
+    this.nieuwProgrammaForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  onModalProgrammaClose() {
+    this.nieuwProgrammaForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  addAlarm(){    
+    this.alarmList.push(this.createAlarm());
+  }
+
+  /**
+   * @ignore
+   */
+  removeAlarm(index) {
+    this.alarmList.removeAt(index);
+  }
+
+  /**
+   * @ignore
+   */
+  createAlarm(): FormGroup {
+    return this.fb.group({
+      soortAlarm: [&#x27;&#x27;],
+      sensor: [&#x27;&#x27;],
+      drempel: [&#x27;&#x27;],
+      gebruiker: [&#x27;&#x27;]
+    });
+  }
+
+  /**
+   * @ignore
+   */
+  get getAlarmen() {
+    return this.opstartForm.get(&#x27;alarmen&#x27;) as FormArray;
+  }
+
+  /**
+   * @ignore
+   */
+  addActie(){
+    this.actieList.push(this.createActie());
+  }
+
+  /**
+   * @ignore
+   */
+  removeActie(index){
+    this.actieList.removeAt(index);
+  }
+
+  /**
+   * @ignore
+   */
+  dateNow: Date;
+  /**
+   * @ignore
+   */
+  createActie(): FormGroup {
+    this.dateNow &#x3D; new Date();
+
+    return this.fb.group({
+      actie: [&#x27;&#x27;],
+      datum: [this.datePipe.transform(this.dateNow, &#x27;yyyy-MM-dd&#x27;)],
+      tijd: [this.datePipe.transform(this.dateNow, &#x27;HH:mm&#x27;)],
+      soortActie: [this.soortActies],
+      notitie: [&#x27;&#x27;]
+    })
+  }
+  
+  /**
+   * @ignore
+   */
+  openModalMateriaal(content) {
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-materiaal-title&#x27; });
+  }
+
+  /**
+   * @ignore
+   */
+  onModalMateriaalClose() {
+    this.nieuwMateriaalForm.reset();
+  }
+
+  /**
+   * Executes when the materiaal form is submitted
+   * Creates a new materiaal in the database
+   */
+  onSubmitNieuwMateriaal() {
+    let naam &#x3D; this.nieuwMateriaalForm.value.naam;
+    let nieuwMateriaal &#x3D; new Materiaal(0, naam);
+    this.subscriptions.add(this._materiaalService.addMateriaal(nieuwMateriaal).subscribe(
+      result &#x3D;&gt; {
+        this.materialen.push(result);
+      }
+    ))
+    this.nieuwMateriaalForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  onModalWijnsoortClose() {
+    this.nieuwSoortWijnForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  openModalWijnsoort(content) {
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-wijnsoort-title&#x27; });
+  }
+
+  /**
+   * Executes when the soortwijn form is submitted
+   * Creates a new SoortWijn in the database
+   */
+  onSubmitNieuwSoortWijn() {
+    let naam &#x3D; this.nieuwSoortWijnForm.value.naam;
+    let nieuwSoortwijn &#x3D; new SoortWijn(0, naam);
+    this.subscriptions.add(this._soortWijnService.addSoortWijn(nieuwSoortwijn).subscribe(
+      result &#x3D;&gt; {
+        this.soortwijnen.push(result);
+      }
+    ))
+    this.nieuwSoortWijnForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  onModalTypeVatClose() {
+    this.nieuwTypeVatForm.reset();
+  }
+
+  /**
+   * @ignore
+   */
+  openModalTypevat(content) {
+    this.modalService.open(content, { ariaLabelledBy: &#x27;modal-typevat-title&#x27; });
+  }
+
+  /**
+   * Executes when the typevat form is submitted
+   * Creates a new TypeVat in the database
+   */
+  onSubmitNieuwTypeVat() {
+    let naam &#x3D; this.nieuwTypeVatForm.value.naam;
+    let nieuwTypeVat &#x3D; new TypeVat(0, naam);
+    this.subscriptions.add(this._typeVatService.addTypeVat(nieuwTypeVat).subscribe(
+      result &#x3D;&gt; {
+        this.typevaten.push(result);
+      }
+    ))
+    this.nieuwTypeVatForm.reset();
+  }  
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot; id&#x3D;&quot;opstartStepper&quot;&gt;
+    &lt;form [formGroup]&#x3D;&quot;opstartForm&quot; (ngSubmit)&#x3D;&quot;onSubmitOpstart()&quot;&gt;
+        &lt;mat-horizontal-stepper #stepper&gt;
+            &lt;mat-step label&#x3D;&quot;Vatinfo&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                        &lt;input matInput placeholder&#x3D;&quot;Vatnaam&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;naam&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.get(&#x27;naam&#x27;).hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                        &lt;input matInput placeholder&#x3D;&quot;Vatnummer&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;nummer&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.get(&#x27;nummer&#x27;).hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-8&quot;&gt;
+                        &lt;mat-label&gt;RaspberryPi&lt;/mat-label&gt;
+                        &lt;mat-select formControlName&#x3D;&quot;raspberryPi&quot;&gt;
+                            &lt;mat-option *ngFor&#x3D;&quot;let item of rasppis&quot; [value]&#x3D;&quot;item&quot;&gt;
+                                    {{item.raspberryPiID}}
+                            &lt;/mat-option&gt;
+                        &lt;/mat-select&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.controls[&#x27;raspberryPi&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-8&quot;&gt;
+                        &lt;mat-label&gt;Type vat&lt;/mat-label&gt;
+                        &lt;mat-select formControlName&#x3D;&quot;typeVat&quot;&gt;
+                            &lt;mat-option *ngFor&#x3D;&quot;let item of typevaten&quot; [value]&#x3D;&quot;item&quot;&gt;
+                                    {{item.naam}}
+                            &lt;/mat-option&gt;
+                        &lt;/mat-select&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.controls[&#x27;typeVat&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                    &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;openModalTypevat(contentTypevat)&quot;&gt;Typevat toevoegen&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-8&quot;&gt;
+                        &lt;mat-label&gt;Materiaal vat&lt;/mat-label&gt;
+                        &lt;mat-select formControlName&#x3D;&quot;materiaal&quot;&gt;
+                            &lt;mat-option *ngFor&#x3D;&quot;let item of materialen&quot; [value]&#x3D;&quot;item&quot;&gt;
+                                    {{item.naam}}
+                            &lt;/mat-option&gt;
+                        &lt;/mat-select&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.controls[&#x27;materiaal&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                    &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;openModalMateriaal(contentMateriaal)&quot;&gt;Materiaal toevoegen&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                        &lt;input matInput placeholder&#x3D;&quot;Locatie&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;locatie&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.get(&#x27;locatie&#x27;).hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;mt-check&quot;&gt;
+                    &lt;mat-checkbox formControlName&#x3D;&quot;koelmantel&quot;&gt;Koelmantel&lt;/mat-checkbox&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;mt-check&quot;&gt;
+                    &lt;mat-checkbox formControlName&#x3D;&quot;mangat&quot;&gt;Mangat&lt;/mat-checkbox&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;h6 class&#x3D;&quot;mt-check&quot;&gt;Automatisch meten&lt;/h6&gt;
+                    &lt;mat-selection-list formControlName&#x3D;&quot;automatischeMetingen&quot;&gt;
+                        &lt;mat-list-option *ngFor&#x3D;&quot;let item of sensors&quot; [value]&#x3D;&quot;item.sensorID&quot;&gt;
+                            {{item.soortMeting.naam}}
+                        &lt;/mat-list-option&gt;
+                    &lt;/mat-selection-list&gt;
+                &lt;/div&gt;
+                &lt;p class&#x3D;&quot;text-center&quot;&gt;
+                    &lt;button class&#x3D;&quot;text-center&quot; type&#x3D;&quot;button&quot; mat-button matStepperNext&gt;Next&lt;/button&gt;
+                &lt;/p&gt;
+            &lt;/mat-step&gt;
+            &lt;mat-step label&#x3D;&quot;Druifinfo&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-8&quot;&gt;
+                        &lt;mat-label&gt;Druifsoort&lt;/mat-label&gt;
+                        &lt;mat-select formControlName&#x3D;&quot;druif&quot;&gt;
+                            &lt;mat-option *ngFor&#x3D;&quot;let item of druiven&quot; [value]&#x3D;&quot;item&quot;&gt;
+                                    {{item.naam}}
+                            &lt;/mat-option&gt;
+                        &lt;/mat-select&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.controls[&#x27;druif&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                    &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;openModalDruif(contentDruif)&quot;&gt;Druifsoort toevoegen&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div *ngIf&#x3D;&quot;opstartForm.value.druif&quot; class&#x3D;&quot;col&quot;&gt;
+                        &lt;p&gt;Kloontype: {{opstartForm.value.druif.kloontype}}&lt;/p&gt;
+                        &lt;p&gt;Leeftijd: {{opstartForm.value.druif.leeftijd}}&lt;/p&gt;
+                        &lt;p&gt;Perceel: {{opstartForm.value.druif.perceel}}&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                        &lt;input matInput placeholder&#x3D;&quot;Jaar&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;jaar&quot;&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.get(&#x27;jaar&#x27;).hasError(&#x27;required&#x27;)&quot;&gt;Required!&lt;/mat-error&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.get(&#x27;jaar&#x27;).hasError(&#x27;pattern&#x27;) &amp;&amp; opstartForm.get(&#x27;jaar&#x27;).touched&quot;&gt;Year format!&lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-8&quot;&gt;
+                        &lt;mat-label&gt;Wijnsoort&lt;/mat-label&gt;
+                        &lt;mat-select formControlName&#x3D;&quot;soortwijn&quot;&gt;
+                            &lt;mat-option *ngFor&#x3D;&quot;let item of soortwijnen&quot; [value]&#x3D;&quot;item&quot;&gt;
+                                    {{item.naam}}
+                            &lt;/mat-option&gt;
+                        &lt;/mat-select&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.controls[&#x27;soortwijn&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                    &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;openModalWijnsoort(contentWijnsoort)&quot;&gt;Wijnsoort toevoegen&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                        &lt;input matInput placeholder&#x3D;&quot;Oogst&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;oogst&quot;&gt;
+                        &lt;span style&#x3D;&quot;margin-left: -20px;&quot;&gt;kg&lt;/span&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.get(&#x27;oogst&#x27;).hasError(&#x27;required&#x27;)&quot;&gt;Required!&lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;mt-check&quot;&gt;
+                    &lt;mat-checkbox formControlName&#x3D;&quot;gekneusd&quot;&gt;Gekneusd&lt;/mat-checkbox&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;col-8&quot;&gt;
+                        &lt;mat-label&gt;Persprogramma&lt;/mat-label&gt;
+                        &lt;mat-select formControlName&#x3D;&quot;programma&quot;&gt;
+                            &lt;mat-option *ngFor&#x3D;&quot;let item of programmas&quot; [value]&#x3D;&quot;item&quot;&gt;
+                                    &lt;span&gt;{{item.naam}}&lt;/span&gt;
+                            &lt;/mat-option&gt;
+                        &lt;/mat-select&gt;
+                        &lt;mat-error *ngIf&#x3D;&quot;opstartForm.controls[&#x27;programma&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                            Required!
+                        &lt;/mat-error&gt;
+                    &lt;/mat-form-field&gt;
+                    &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;openModalProgramma(contentProgramma)&quot;&gt;Programma toevoegen&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div *ngIf&#x3D;&quot;opstartForm.value.programma&quot; class&#x3D;&quot;col-12&quot;&gt;
+                        &lt;p&gt;Inhoud: {{opstartForm.value.programma.inhoud}}&lt;/p&gt;
+                        &lt;p&gt;Pmax: {{opstartForm.value.programma.pmax}}&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class&#x3D;&quot;text-center&quot;&gt;
+                    &lt;button class&#x3D;&quot;text-center&quot; type&#x3D;&quot;button&quot; mat-button matStepperPrevious&gt;Back&lt;/button&gt;
+                    &lt;button class&#x3D;&quot;text-center&quot; type&#x3D;&quot;button&quot; mat-button matStepperNext&gt;Next&lt;/button&gt;
+                &lt;/p&gt;
+            &lt;/mat-step&gt;
+            &lt;mat-step label&#x3D;&quot;Alarmen&quot;&gt;
+                &lt;div formArrayName&#x3D;&quot;alarmen&quot;&gt;
+                    &lt;div *ngFor&#x3D;&quot;let item of getAlarmen.controls; let i &#x3D; index&quot; [formGroupName]&#x3D;&quot;i&quot;&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;h4 class&#x3D;&quot;col-6&quot;&gt;Alarm {{i+1}}&lt;/h4&gt;
+                            &lt;button class&#x3D;&quot;col-6 btn btn-danger&quot; type&#x3D;&quot;button&quot; (click)&#x3D;(removeAlarm(i))&gt;Remove&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                                &lt;mat-label&gt;Soort&lt;/mat-label&gt;
+                                &lt;mat-select formControlName&#x3D;&quot;soortAlarm&quot; multiple&gt;
+                                    &lt;mat-option *ngFor&#x3D;&quot;let item of soortAlarmen&quot; [value]&#x3D;&quot;item.soortAlarmID&quot;&gt;
+                                            {{item.naam}}
+                                    &lt;/mat-option&gt;
+                                &lt;/mat-select&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                                &lt;mat-label&gt;Sensor&lt;/mat-label&gt;
+                                &lt;mat-select formControlName&#x3D;&quot;sensor&quot;&gt;
+                                    &lt;mat-option *ngFor&#x3D;&quot;let item of sensors&quot; [value]&#x3D;&quot;item.sensorID&quot;&gt;
+                                            {{item.soortMeting.naam}}
+                                    &lt;/mat-option&gt;
+                                &lt;/mat-select&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                                &lt;input matInput placeholder&#x3D;&quot;Drempel&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;drempel&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                                &lt;mat-label&gt;Gebruiker&lt;/mat-label&gt;
+                                &lt;mat-select formControlName&#x3D;&quot;gebruiker&quot; multiple&gt;
+                                    &lt;mat-option *ngFor&#x3D;&quot;let item of gebruikers&quot; [value]&#x3D;&quot;item.gebruikerID&quot;&gt;
+                                                {{item.naam}}
+                                    &lt;/mat-option&gt;
+                                &lt;/mat-select&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class&#x3D;&quot;text-center&quot;&gt;
+                    &lt;button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;addAlarm()&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Add alarm&lt;/button&gt;
+                &lt;/p&gt;
+                &lt;p class&#x3D;&quot;text-center&quot;&gt;
+                    &lt;button class&#x3D;&quot;text-center&quot; type&#x3D;&quot;button&quot; mat-button matStepperPrevious&gt;Back&lt;/button&gt;
+                    &lt;button class&#x3D;&quot;text-center&quot; type&#x3D;&quot;button&quot; mat-button matStepperNext&gt;Next&lt;/button&gt;
+                &lt;/p&gt;
+            &lt;/mat-step&gt;
+            &lt;mat-step label&#x3D;&quot;Acties&quot;&gt;
+                &lt;div formArrayName&#x3D;&quot;acties&quot;&gt;
+                    &lt;div *ngFor&#x3D;&quot;let item of actieList.controls; let i &#x3D; index&quot; [formGroupName]&#x3D;&quot;i&quot;&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;h4 class&#x3D;&quot;col-6&quot;&gt;Actie {{i+1}}&lt;/h4&gt;
+                            &lt;button class&#x3D;&quot;col-6 btn btn-danger&quot; type&#x3D;&quot;button&quot; (click)&#x3D;(removeActie(i))&gt;Remove&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                                &lt;input matInput type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Actie&quot; formControlName&#x3D;&quot;actie&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-6&quot;&gt;
+                                &lt;mat-label&gt;Datum&lt;/mat-label&gt;
+                                &lt;input matInput [matDatepicker]&#x3D;&quot;picker&quot; formControlName&#x3D;&quot;datum&quot;&gt;
+                                &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                                &lt;mat-datepicker #picker&gt;&lt;/mat-datepicker&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-6&quot;&gt;
+                                &lt;input matInput type&#x3D;&quot;time&quot; placeholder&#x3D;&quot;Tijd&quot; formControlName&#x3D;&quot;tijd&quot;&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                                &lt;mat-label&gt;Soort Actie&lt;/mat-label&gt;
+                                &lt;mat-select formControlName&#x3D;&quot;soortActie&quot;&gt;
+                                    &lt;mat-option *ngFor&#x3D;&quot;let item of soortActies&quot; [value]&#x3D;&quot;item.soortActieID&quot;&gt;
+                                                {{item.naam}}
+                                    &lt;/mat-option&gt;
+                                &lt;/mat-select&gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row&quot;&gt;
+                            &lt;mat-form-field class&#x3D;&quot;col-12&quot;&gt;
+                                &lt;mat-label&gt;Notitie&lt;/mat-label&gt;
+                                &lt;textarea matInput
+                                          cdkTextareaAutosize
+                                          formControlName&#x3D;&quot;notitie&quot;
+                                          #autosize&#x3D;&quot;cdkTextareaAutosize&quot;
+                                          cdkAutosizeMinRows&#x3D;&quot;1&quot;
+                                          cdkAutosizeMaxRows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;
+                              &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class&#x3D;&quot;text-center&quot;&gt;
+                    &lt;button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;addActie()&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Add actie&lt;/button&gt;
+                &lt;/p&gt;
+                &lt;p class&#x3D;&quot;text-center&quot;&gt;
+                    &lt;button class&#x3D;&quot;text-center&quot; type&#x3D;&quot;button&quot; mat-button matStepperPrevious&gt;Back&lt;/button&gt;
+                &lt;/p&gt;
+            &lt;/mat-step&gt;
+        &lt;/mat-horizontal-stepper&gt;
+        &lt;p class&#x3D;&quot;text-center mt-3&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!opstartForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Proces starten.&lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+
+&lt;!-- Modals --&gt;
+&lt;ng-template #contentDruif let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-druif-title&quot;&gt;Nieuwe druif&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalDruifClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;nieuweDruifForm&quot; (ngSubmit)&#x3D;&quot;onSubmitNieuweDruif(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Naam&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;naam&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuweDruifForm.get(&#x27;naam&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuweDruifForm.get(&#x27;naam&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Kloontype&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;kloontype&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuweDruifForm.get(&#x27;kloontype&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuweDruifForm.get(&#x27;kloontype&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Leeftijd&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;leeftijd&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuweDruifForm.get(&#x27;leeftijd&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuweDruifForm.get(&#x27;leeftijd&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Perceel&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;perceel&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuweDruifForm.get(&#x27;perceel&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuweDruifForm.get(&#x27;perceel&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!nieuweDruifForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Save&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalDruifClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #contentProgramma let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-programma-title&quot;&gt;Nieuw persprogramma&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalProgrammaClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;nieuwProgrammaForm&quot; (ngSubmit)&#x3D;&quot;onSubmitNieuwProgramma(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Naam&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;naam&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuwProgrammaForm.get(&#x27;naam&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuwProgrammaForm.get(&#x27;naam&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Pmax&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;pmax&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuwProgrammaForm.get(&#x27;pmax&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuwProgrammaForm.get(&#x27;pmax&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Inhoud&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;inhoud&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuwProgrammaForm.get(&#x27;inhoud&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuwProgrammaForm.get(&#x27;inhoud&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!nieuwProgrammaForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Save&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalProgrammaClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #contentMateriaal let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-materiaal-title&quot;&gt;Nieuw materiaal&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalMateriaalClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;nieuwMateriaalForm&quot; (ngSubmit)&#x3D;&quot;onSubmitNieuwMateriaal(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Naam&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;naam&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuwMateriaalForm.get(&#x27;naam&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuwMateriaalForm.get(&#x27;naam&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!nieuwMateriaalForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Save&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalMateriaalClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #contentWijnsoort let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-wijnsoort-title&quot;&gt;Nieuwe wijnsoort&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalWijnsoortClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;nieuwSoortWijnForm&quot; (ngSubmit)&#x3D;&quot;onSubmitNieuwSoortWijn(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Naam&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;naam&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuwSoortWijnForm.get(&#x27;naam&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuwSoortWijnForm.get(&#x27;naam&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!nieuwSoortWijnForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Save&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalWijnsoortClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #contentTypevat let-modal&gt;
+    &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+        &lt;h3 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;modal-typevat-title&quot;&gt;Nieuw type vat&lt;/h3&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;onModalTypeVatClose(); modal.dismiss()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;form [formGroup]&#x3D;&quot;nieuwTypeVatForm&quot; (ngSubmit)&#x3D;&quot;onSubmitNieuwTypeVat(); modal.close()&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;mat-form-field class&#x3D;&quot;col&quot;&gt;
+                    &lt;input matInput placeholder&#x3D;&quot;Naam&quot; type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;naam&quot;&gt;
+                    &lt;mat-error *ngIf&#x3D;&quot;nieuwTypeVatForm.get(&#x27;naam&#x27;).hasError(&#x27;required&#x27;) &amp;&amp; nieuwTypeVatForm.get(&#x27;naam&#x27;).touched&quot;&gt;
+                        Required!
+                    &lt;/mat-error&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+            &lt;button type&#x3D;&quot;submit&quot; [disabled]&#x3D;&quot;!nieuwTypeVatForm.valid&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Save&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;onModalTypeVatClose(); modal.close()&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./proces-opstart.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#opstartStepper .row, .mt-check{
+    margin-top: 15px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container" id="opstartStepper">    <form [formGroup]="opstartForm" (ngSubmit)="onSubmitOpstart()">        <mat-horizontal-stepper #stepper>            <mat-step label="Vatinfo">                <div class="row">                    <mat-form-field class="col-12">                        <input matInput placeholder="Vatnaam" type="text" formControlName="naam">                        <mat-error *ngIf="opstartForm.get(\'naam\').hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                </div>                <div class="row">                    <mat-form-field class="col-12">                        <input matInput placeholder="Vatnummer" type="text" formControlName="nummer">                        <mat-error *ngIf="opstartForm.get(\'nummer\').hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                </div>                <div class="row">                    <mat-form-field class="col-8">                        <mat-label>RaspberryPi</mat-label>                        <mat-select formControlName="raspberryPi">                            <mat-option *ngFor="let item of rasppis" [value]="item">                                    {{item.raspberryPiID}}                            </mat-option>                        </mat-select>                        <mat-error *ngIf="opstartForm.controls[\'raspberryPi\'].hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                </div>                <div class="row">                    <mat-form-field class="col-8">                        <mat-label>Type vat</mat-label>                        <mat-select formControlName="typeVat">                            <mat-option *ngFor="let item of typevaten" [value]="item">                                    {{item.naam}}                            </mat-option>                        </mat-select>                        <mat-error *ngIf="opstartForm.controls[\'typeVat\'].hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                    <div class="col-4">                        <button type="button" class="btn btn-success" (click)="openModalTypevat(contentTypevat)">Typevat toevoegen</button>                    </div>                </div>                <div class="row">                    <mat-form-field class="col-8">                        <mat-label>Materiaal vat</mat-label>                        <mat-select formControlName="materiaal">                            <mat-option *ngFor="let item of materialen" [value]="item">                                    {{item.naam}}                            </mat-option>                        </mat-select>                        <mat-error *ngIf="opstartForm.controls[\'materiaal\'].hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                    <div class="col-4">                        <button type="button" class="btn btn-success" (click)="openModalMateriaal(contentMateriaal)">Materiaal toevoegen</button>                    </div>                </div>                <div class="row">                    <mat-form-field class="col-12">                        <input matInput placeholder="Locatie" type="text" formControlName="locatie">                        <mat-error *ngIf="opstartForm.get(\'locatie\').hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                </div>                <div class="mt-check">                    <mat-checkbox formControlName="koelmantel">Koelmantel</mat-checkbox>                </div>                <div class="mt-check">                    <mat-checkbox formControlName="mangat">Mangat</mat-checkbox>                </div>                <div>                    <h6 class="mt-check">Automatisch meten</h6>                    <mat-selection-list formControlName="automatischeMetingen">                        <mat-list-option *ngFor="let item of sensors" [value]="item.sensorID">                            {{item.soortMeting.naam}}                        </mat-list-option>                    </mat-selection-list>                </div>                <p class="text-center">                    <button class="text-center" type="button" mat-button matStepperNext>Next</button>                </p>            </mat-step>            <mat-step label="Druifinfo">                <div class="row">                    <mat-form-field class="col-8">                        <mat-label>Druifsoort</mat-label>                        <mat-select formControlName="druif">                            <mat-option *ngFor="let item of druiven" [value]="item">                                    {{item.naam}}                            </mat-option>                        </mat-select>                        <mat-error *ngIf="opstartForm.controls[\'druif\'].hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                    <div class="col-4">                        <button type="button" class="btn btn-success" (click)="openModalDruif(contentDruif)">Druifsoort toevoegen</button>                    </div>                    <div *ngIf="opstartForm.value.druif" class="col">                        <p>Kloontype: {{opstartForm.value.druif.kloontype}}</p>                        <p>Leeftijd: {{opstartForm.value.druif.leeftijd}}</p>                        <p>Perceel: {{opstartForm.value.druif.perceel}}</p>                    </div>                </div>                <div class="row">                    <mat-form-field class="col-12">                        <input matInput placeholder="Jaar" type="text" formControlName="jaar">                        <mat-error *ngIf="opstartForm.get(\'jaar\').hasError(\'required\')">Required!</mat-error>                        <mat-error *ngIf="opstartForm.get(\'jaar\').hasError(\'pattern\') && opstartForm.get(\'jaar\').touched">Year format!</mat-error>                    </mat-form-field>                </div>                <div class="row">                    <mat-form-field class="col-8">                        <mat-label>Wijnsoort</mat-label>                        <mat-select formControlName="soortwijn">                            <mat-option *ngFor="let item of soortwijnen" [value]="item">                                    {{item.naam}}                            </mat-option>                        </mat-select>                        <mat-error *ngIf="opstartForm.controls[\'soortwijn\'].hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                    <div class="col-4">                        <button type="button" class="btn btn-success" (click)="openModalWijnsoort(contentWijnsoort)">Wijnsoort toevoegen</button>                    </div>                </div>                <div class="row">                    <mat-form-field class="col-12">                        <input matInput placeholder="Oogst" type="text" formControlName="oogst">                        <span style="margin-left: -20px;">kg</span>                        <mat-error *ngIf="opstartForm.get(\'oogst\').hasError(\'required\')">Required!</mat-error>                    </mat-form-field>                </div>                <div class="mt-check">                    <mat-checkbox formControlName="gekneusd">Gekneusd</mat-checkbox>                </div>                <div class="row">                    <mat-form-field class="col-8">                        <mat-label>Persprogramma</mat-label>                        <mat-select formControlName="programma">                            <mat-option *ngFor="let item of programmas" [value]="item">                                    <span>{{item.naam}}</span>                            </mat-option>                        </mat-select>                        <mat-error *ngIf="opstartForm.controls[\'programma\'].hasError(\'required\')">                            Required!                        </mat-error>                    </mat-form-field>                    <div class="col-4">                        <button type="button" class="btn btn-success" (click)="openModalProgramma(contentProgramma)">Programma toevoegen</button>                    </div>                    <div *ngIf="opstartForm.value.programma" class="col-12">                        <p>Inhoud: {{opstartForm.value.programma.inhoud}}</p>                        <p>Pmax: {{opstartForm.value.programma.pmax}}</p>                    </div>                </div>                <p class="text-center">                    <button class="text-center" type="button" mat-button matStepperPrevious>Back</button>                    <button class="text-center" type="button" mat-button matStepperNext>Next</button>                </p>            </mat-step>            <mat-step label="Alarmen">                <div formArrayName="alarmen">                    <div *ngFor="let item of getAlarmen.controls; let i = index" [formGroupName]="i">                        <div class="row">                            <h4 class="col-6">Alarm {{i+1}}</h4>                            <button class="col-6 btn btn-danger" type="button" (click)=(removeAlarm(i))>Remove</button>                        </div>                        <div class="row">                            <mat-form-field class="col-12">                                <mat-label>Soort</mat-label>                                <mat-select formControlName="soortAlarm" multiple>                                    <mat-option *ngFor="let item of soortAlarmen" [value]="item.soortAlarmID">                                            {{item.naam}}                                    </mat-option>                                </mat-select>                            </mat-form-field>                        </div>                        <div class="row">                            <mat-form-field class="col-12">                                <mat-label>Sensor</mat-label>                                <mat-select formControlName="sensor">                                    <mat-option *ngFor="let item of sensors" [value]="item.sensorID">                                            {{item.soortMeting.naam}}                                    </mat-option>                                </mat-select>                            </mat-form-field>                        </div>                        <div class="row">                            <mat-form-field class="col-12">                                <input matInput placeholder="Drempel" type="text" formControlName="drempel">                            </mat-form-field>                        </div>                        <div class="row">                            <mat-form-field class="col-12">                                <mat-label>Gebruiker</mat-label>                                <mat-select formControlName="gebruiker" multiple>                                    <mat-option *ngFor="let item of gebruikers" [value]="item.gebruikerID">                                                {{item.naam}}                                    </mat-option>                                </mat-select>                            </mat-form-field>                        </div>                    </div>                </div>                <p class="text-center">                    <button type="button" (click)="addAlarm()" class="btn btn-primary">Add alarm</button>                </p>                <p class="text-center">                    <button class="text-center" type="button" mat-button matStepperPrevious>Back</button>                    <button class="text-center" type="button" mat-button matStepperNext>Next</button>                </p>            </mat-step>            <mat-step label="Acties">                <div formArrayName="acties">                    <div *ngFor="let item of actieList.controls; let i = index" [formGroupName]="i">                        <div class="row">                            <h4 class="col-6">Actie {{i+1}}</h4>                            <button class="col-6 btn btn-danger" type="button" (click)=(removeActie(i))>Remove</button>                        </div>                        <div class="row">                            <mat-form-field class="col-12">                                <input matInput type="text" placeholder="Actie" formControlName="actie">                            </mat-form-field>                        </div>                        <div class="row">                            <mat-form-field class="col-6">                                <mat-label>Datum</mat-label>                                <input matInput [matDatepicker]="picker" formControlName="datum">                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>                                <mat-datepicker #picker></mat-datepicker>                            </mat-form-field>                            <mat-form-field class="col-6">                                <input matInput type="time" placeholder="Tijd" formControlName="tijd">                            </mat-form-field>                        </div>                        <div class="row">                            <mat-form-field class="col-12">                                <mat-label>Soort Actie</mat-label>                                <mat-select formControlName="soortActie">                                    <mat-option *ngFor="let item of soortActies" [value]="item.soortActieID">                                                {{item.naam}}                                    </mat-option>                                </mat-select>                            </mat-form-field>                        </div>                        <div class="row">                            <mat-form-field class="col-12">                                <mat-label>Notitie</mat-label>                                <textarea matInput                                          cdkTextareaAutosize                                          formControlName="notitie"                                          #autosize="cdkTextareaAutosize"                                          cdkAutosizeMinRows="1"                                          cdkAutosizeMaxRows="3"></textarea>                              </mat-form-field>                        </div>                    </div>                </div>                <p class="text-center">                    <button type="button" (click)="addActie()" class="btn btn-primary">Add actie</button>                </p>                <p class="text-center">                    <button class="text-center" type="button" mat-button matStepperPrevious>Back</button>                </p>            </mat-step>        </mat-horizontal-stepper>        <p class="text-center mt-3">            <button type="submit" [disabled]="!opstartForm.valid" class="btn btn-success">Proces starten.</button>        </p>    </form></div><!-- Modals --><ng-template #contentDruif let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-druif-title">Nieuwe druif</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalDruifClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="nieuweDruifForm" (ngSubmit)="onSubmitNieuweDruif(); modal.close()">        <div class="modal-body">            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Naam" type="text" formControlName="naam">                    <mat-error *ngIf="nieuweDruifForm.get(\'naam\').hasError(\'required\') && nieuweDruifForm.get(\'naam\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Kloontype" type="text" formControlName="kloontype">                    <mat-error *ngIf="nieuweDruifForm.get(\'kloontype\').hasError(\'required\') && nieuweDruifForm.get(\'kloontype\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Leeftijd" type="text" formControlName="leeftijd">                    <mat-error *ngIf="nieuweDruifForm.get(\'leeftijd\').hasError(\'required\') && nieuweDruifForm.get(\'leeftijd\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Perceel" type="text" formControlName="perceel">                    <mat-error *ngIf="nieuweDruifForm.get(\'perceel\').hasError(\'required\') && nieuweDruifForm.get(\'perceel\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!nieuweDruifForm.valid" class="btn btn-success">Save</button>            <button type="button" class="btn btn-danger" (click)="onModalDruifClose(); modal.close()">Cancel</button>        </div>    </form></ng-template><ng-template #contentProgramma let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-programma-title">Nieuw persprogramma</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalProgrammaClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="nieuwProgrammaForm" (ngSubmit)="onSubmitNieuwProgramma(); modal.close()">        <div class="modal-body">            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Naam" type="text" formControlName="naam">                    <mat-error *ngIf="nieuwProgrammaForm.get(\'naam\').hasError(\'required\') && nieuwProgrammaForm.get(\'naam\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Pmax" type="text" formControlName="pmax">                    <mat-error *ngIf="nieuwProgrammaForm.get(\'pmax\').hasError(\'required\') && nieuwProgrammaForm.get(\'pmax\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Inhoud" type="text" formControlName="inhoud">                    <mat-error *ngIf="nieuwProgrammaForm.get(\'inhoud\').hasError(\'required\') && nieuwProgrammaForm.get(\'inhoud\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!nieuwProgrammaForm.valid" class="btn btn-success">Save</button>            <button type="button" class="btn btn-danger" (click)="onModalProgrammaClose(); modal.close()">Cancel</button>        </div>    </form></ng-template><ng-template #contentMateriaal let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-materiaal-title">Nieuw materiaal</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalMateriaalClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="nieuwMateriaalForm" (ngSubmit)="onSubmitNieuwMateriaal(); modal.close()">        <div class="modal-body">            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Naam" type="text" formControlName="naam">                    <mat-error *ngIf="nieuwMateriaalForm.get(\'naam\').hasError(\'required\') && nieuwMateriaalForm.get(\'naam\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!nieuwMateriaalForm.valid" class="btn btn-success">Save</button>            <button type="button" class="btn btn-danger" (click)="onModalMateriaalClose(); modal.close()">Cancel</button>        </div>    </form></ng-template><ng-template #contentWijnsoort let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-wijnsoort-title">Nieuwe wijnsoort</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalWijnsoortClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="nieuwSoortWijnForm" (ngSubmit)="onSubmitNieuwSoortWijn(); modal.close()">        <div class="modal-body">            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Naam" type="text" formControlName="naam">                    <mat-error *ngIf="nieuwSoortWijnForm.get(\'naam\').hasError(\'required\') && nieuwSoortWijnForm.get(\'naam\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!nieuwSoortWijnForm.valid" class="btn btn-success">Save</button>            <button type="button" class="btn btn-danger" (click)="onModalWijnsoortClose(); modal.close()">Cancel</button>        </div>    </form></ng-template><ng-template #contentTypevat let-modal>    <div class="modal-header">        <h3 class="modal-title" id="modal-typevat-title">Nieuw type vat</h3>        <button type="button" class="close" aria-label="Close" (click)="onModalTypeVatClose(); modal.dismiss()">            <span aria-hidden="true">&times;</span>          </button>    </div>    <form [formGroup]="nieuwTypeVatForm" (ngSubmit)="onSubmitNieuwTypeVat(); modal.close()">        <div class="modal-body">            <div class="row">                <mat-form-field class="col">                    <input matInput placeholder="Naam" type="text" formControlName="naam">                    <mat-error *ngIf="nieuwTypeVatForm.get(\'naam\').hasError(\'required\') && nieuwTypeVatForm.get(\'naam\').touched">                        Required!                    </mat-error>                </mat-form-field>            </div>        </div>        <div class="modal-footer">            <button type="submit" [disabled]="!nieuwTypeVatForm.valid" class="btn btn-success">Save</button>            <button type="button" class="btn btn-danger" (click)="onModalTypeVatClose(); modal.close()">Cancel</button>        </div>    </form></ng-template></div>'
+    var COMPONENTS = [{'name': 'ActionsComponent', 'selector': 'app-actions'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardStyle1Component', 'selector': 'app-card-style1'},{'name': 'CardTemplateBaseComponent', 'selector': 'app-card-template-base'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'InfoComponent', 'selector': 'app-info'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MeasurementsComponent', 'selector': 'app-measurements'},{'name': 'ModalAddActivityComponent', 'selector': 'app-modal-add-activity'},{'name': 'ModalAddMeasurementComponent', 'selector': 'app-modal-add-measurement'},{'name': 'ModalStopProcessComponent', 'selector': 'app-modal-stop-process'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'ProcesOpstartComponent', 'selector': 'app-proces-opstart'},{'name': 'ProcessCardsComponent', 'selector': 'app-process-cards'},{'name': 'ProcessCardsItemComponent', 'selector': 'app-process-cards-item'},{'name': 'ProcessOverviewComponent', 'selector': 'app-process-overview'},{'name': 'UsersBeherenComponent', 'selector': 'app-users-beheren'}];
+    var DIRECTIVES = [{'name': 'CardsDirective', 'selector': '[card-host]'}];
+    var ACTUAL_COMPONENT = {'name': 'ProcesOpstartComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProcesOpstartComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

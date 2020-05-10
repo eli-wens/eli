@@ -1,0 +1,59 @@
+<style>
+    .grid{ 
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: white;
+    right:0px;
+     }
+     .grid *{
+        text-align: center;
+        margin: 0px auto;
+     }
+
+     .grid img{
+        max-width: 300px;
+        width: 90%;
+     }
+
+    .balk{
+        background-color: grey;
+        color: white;
+        text-align: center;
+        padding: 10px 0px;
+        margin-top: 15px;
+    }
+    .balk *{
+        margin-block-end: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .absolute{
+        position: absolute;
+        width:100%;
+        right: 0px;
+    }
+
+    .page-header{
+        background-image: url({{site.baseurl}}/media/header_low.jpg);
+        background-image: url({{site.baseurl}}/media/header.jpg);
+        background-size: cover;
+        background-position: center;
+        color: black;
+        background-color: #d9d0c9;
+    }
+
+</style>
+
+<footer class="absolute">
+    <div class="grid">
+        <h1 style="display: none;"></h1>
+        <h1></h1>
+        <a href="https://rob-vl.synology.me:3402"> <img src="/RewinedDocs/media/logo/rewined_logo_s.png" alt="" width="150"></a>
+        <h1></h1>
+    </div>
+
+    <div class="balk">
+        <p> Laatst bijgewerkt op {{ site.time | date: '%d %b %Y' }} | Written by {{page.author}}</p>
+    </div>
+    
+</footer>
