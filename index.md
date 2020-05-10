@@ -1,7 +1,7 @@
 ---
 layout: default
-title: RewinedDocs
-author: John doe
+title: Portfolio
+author: Eli Wens
 ---
 
 {% include nav-breadcrumbs.html %}
