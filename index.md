@@ -6,12 +6,10 @@ author: Eli Wens
 
 {% include nav-breadcrumbs.html %}
 
-# Welkom bij mijn portfolio!
+<h1 class="color-black">Welkom bij mijn portfolio!</h1>>
 
+Ik ben Eli Wens. Ik studeer dit jaar af als bachelor in de richting Electronica-ICT. In functie van mijn afstuderen, heb ik een portfolio gemaakt waarin je een aantal projecten kan zien. Aan de hand van de informatie die je hier kan vinden, wil ik aantonen dat ik meer dan klaar ben voor het werkveld!
 
-### Welkom!
-
-Welkom op de documentatiepagina van Rewined, ook wel RewinedDocs genoemd.
 Deze documentatie is opgesteld in markdown en wordt beheerd in een repository op Github en gehost door
 [Github Pages](https://rob-van-looveren.github.io/RewinedDocs/).
 
